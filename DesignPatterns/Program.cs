@@ -47,6 +47,37 @@ namespace DesignPatterns
             return products.Where(product => product.Color == color && product.Size == size);
         }
     }
+
+    public interface ISpecification<T>
+    {
+        bool IsSatisfied(T t);
+    }
+
+    public interface IFilter<T>
+    {
+        IEnumerable<T> Filter(IEnumerable<T> items, ISpecification<T> spec);
+    }
+
+    public class ColorSpecification : ISpecification<Product>
+    {
+        private Color color;
+        public ColorSpecification(Color color)
+        {
+            this.color = color;
+        }
+        public bool IsSatisfied(Product t)
+        {
+            return t.Color == color;
+        }
+    }
+
+    public class BetterFilter : IFilter<Product>
+    {
+        public IEnumerable<Product> Filter(IEnumerable<Product> items, ISpecification<Product> spec)
+        {
+            return items.Where(spec.IsSatisfied);
+        }
+    }
     
     internal class Program
     {
@@ -61,10 +92,12 @@ namespace DesignPatterns
             Console.WriteLine("Green products (old): ");
 
             foreach (var product in pf.FilterByColor(products, Color.Green))
-            {
                 Console.WriteLine($" - {product.Name} is green");
-            }
-            
+
+            var bf = new BetterFilter();
+            Console.WriteLine("Green products (new):");
+            foreach (var product in bf.Filter(products, new ColorSpecification(Color.Green)))
+                Console.WriteLine($" - {product.Name} is green");
         }
     }
 }
