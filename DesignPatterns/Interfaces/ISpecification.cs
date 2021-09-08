@@ -1,4 +1,4 @@
-namespace DesignPatterns
+namespace DesignPatterns.Interfaces
 {
     public interface ISpecification<in T>
     {

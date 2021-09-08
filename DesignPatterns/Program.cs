@@ -1,4 +1,7 @@
 ﻿using System;
+using DesignPatterns.Classes;
+using DesignPatterns.Classes.ImplementInterface;
+using DesignPatterns.Enums;
 
 namespace DesignPatterns
 {

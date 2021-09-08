@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using DesignPatterns.Interfaces;
 
-namespace DesignPatterns
+namespace DesignPatterns.Classes.ImplementInterface
 {
     public class BetterFilter : IFilter<Product>
     {

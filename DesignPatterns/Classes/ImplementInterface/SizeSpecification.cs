@@ -1,17 +1,20 @@
-namespace DesignPatterns
+using DesignPatterns.Enums;
+using DesignPatterns.Interfaces;
+
+namespace DesignPatterns.Classes.ImplementInterface
 {
     public class SizeSpecification : ISpecification<Product>
     {
-        private readonly Size size;
+        private readonly Size _size;
 
         public SizeSpecification(Size size)
         {
-            this.size = size;
+            this._size = size;
         }
 
         public bool IsSatisfied(Product t)
         {
-            return t.Size == size;
+            return t.Size == _size;
         }
     }
 }

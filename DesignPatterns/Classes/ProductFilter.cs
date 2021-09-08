@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
+using DesignPatterns.Enums;
 
-namespace DesignPatterns
+namespace DesignPatterns.Classes
 {
     public class ProductFilter
     {

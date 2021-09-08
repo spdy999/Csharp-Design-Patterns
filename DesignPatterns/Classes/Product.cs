@@ -1,4 +1,6 @@
-namespace DesignPatterns
+using DesignPatterns.Enums;
+
+namespace DesignPatterns.Classes
 {
     public class Product
     {
