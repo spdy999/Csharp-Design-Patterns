@@ -38,18 +38,18 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="AndSpecification.cs" />
-        <Compile Include="BetterFilter.cs" />
-        <Compile Include="Color.cs" />
-        <Compile Include="ColorSpecification.cs" />
-        <Compile Include="IFilter.cs" />
-        <Compile Include="ISpecification.cs" />
-        <Compile Include="Product.cs" />
-        <Compile Include="ProductFilter.cs" />
+        <Compile Include="Classes\ImplementInterface\AndSpecification.cs" />
+        <Compile Include="Classes\ImplementInterface\BetterFilter.cs" />
+        <Compile Include="Classes\ImplementInterface\ColorSpecification.cs" />
+        <Compile Include="Classes\ImplementInterface\SizeSpecification.cs" />
+        <Compile Include="Classes\Product.cs" />
+        <Compile Include="Classes\ProductFilter.cs" />
+        <Compile Include="Enums\Color.cs" />
+        <Compile Include="Enums\Size.cs" />
+        <Compile Include="Interfaces\IFilter.cs" />
+        <Compile Include="Interfaces\ISpecification.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="Size.cs" />
-        <Compile Include="SizeSpecification.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
