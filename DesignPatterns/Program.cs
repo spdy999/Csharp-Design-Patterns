@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DesignPatterns
+﻿namespace DesignPatterns
 {
-    internal class Program
+    internal static class Program
     {
         public static void Main(string[] args)
         {
