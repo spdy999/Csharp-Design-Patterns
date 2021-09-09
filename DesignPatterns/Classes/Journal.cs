@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace DesignPatterns.Classes
 {
@@ -25,6 +26,22 @@ namespace DesignPatterns.Classes
         public override string ToString()
         {
             return string.Join(Environment.NewLine, _entries);
+        }
+
+        // These methods are out of scope of Journal class should do
+        // We should move it outside to not compromise "Single Responsibility Principle"
+        public void Save(string filename)
+        {
+            File.WriteAllText(filename, ToString());
+        }
+
+        public static Journal Load(string filename)
+        {
+            return new Journal();
+        }
+
+        public void Load(Uri uri)
+        {
         }
     }
 }
