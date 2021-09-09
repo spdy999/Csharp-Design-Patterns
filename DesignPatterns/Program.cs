@@ -17,7 +17,7 @@ namespace DesignPatterns
 
             Rectangle sq = new Square();
             sq.Width = 4;
-            Console.WriteLine($"{sq} has area {Area(sq)}"); // Width: 4, Height: 0 has area 0
+            Console.WriteLine($"{sq} has area {Area(sq)}"); // Width: 4, Height: 4 has area 16 <-- we declare override for Width and Height
         }
     }
 }
