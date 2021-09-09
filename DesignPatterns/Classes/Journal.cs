@@ -13,7 +13,7 @@ namespace DesignPatterns.Classes
         // Methods
         public int AddEntry(string text)
         {
-            _entries.Add($"{++_count}");
+            _entries.Add($"{++_count}: {text}");
             return _count; // memento 
         }
 
