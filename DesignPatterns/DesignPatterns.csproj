@@ -40,6 +40,7 @@
     <ItemGroup>
         <Compile Include="Classes\Document.cs" />
         <Compile Include="Classes\MultiFunctionPrinter.cs" />
+        <Compile Include="Classes\OldFashionedPrinter.cs" />
         <Compile Include="Interfaces\IMachine.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
