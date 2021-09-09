@@ -14,7 +14,7 @@ namespace DesignPatterns
             relationships.AddParentAndChild(parent, child1);
             relationships.AddParentAndChild(parent, child2);
 
-            var research = new Research(relationships);
+            // var research = new Research(relationships);
         }
     }
 }

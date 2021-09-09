@@ -42,6 +42,7 @@
         <Compile Include="Classes\Relationships.cs"/>
         <Compile Include="Classes\Research.cs"/>
         <Compile Include="Enums\Relationship.cs"/>
+        <Compile Include="Interfaces\IRelationshipBrowser.cs"/>
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
