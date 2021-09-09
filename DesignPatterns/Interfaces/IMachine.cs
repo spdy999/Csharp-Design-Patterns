@@ -2,10 +2,8 @@ using DesignPatterns.Classes;
 
 namespace DesignPatterns.Interfaces
 {
-    public interface IMachine
+    public interface IMachine : IMultiFunctionDevice
     {
-        void Print(Document d);
-        void Scan(Document d);
         void Fax(Document d);
     }
 }
