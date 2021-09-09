@@ -41,7 +41,10 @@
         <Compile Include="Classes\Document.cs" />
         <Compile Include="Classes\MultiFunctionPrinter.cs" />
         <Compile Include="Classes\OldFashionedPrinter.cs" />
+        <Compile Include="Classes\Photocopier.cs" />
         <Compile Include="Interfaces\IMachine.cs" />
+        <Compile Include="Interfaces\IPrinter.cs" />
+        <Compile Include="Interfaces\IScanner.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
