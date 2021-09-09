@@ -7,11 +7,12 @@ namespace DesignPatterns.Classes
     public class Relationships
     {
         public readonly List<(Person, Relationship, Person)> _relations = new List<(Person, Relationship, Person)>();
+        public List<(Person, Relationship, Person)> Relations => _relations;
 
         public void AddParentAndChild(Person parent, Person child)
         {
-            _relations.Add((parent, Relationship.Child, child));
-            _relations.Add((parent, Relationship.Child, child));
+            _relations.Add((parent, Relationship.Parent, child));
+            _relations.Add((child, Relationship.Child, parent));
         }
     }
 }
